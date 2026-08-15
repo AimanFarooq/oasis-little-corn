@@ -1,0 +1,1787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- ============================ SEO / SOCIAL ============================ -->
+<title>Oasis · Little Corn Island Restaurant — Open-Fire Seafood &amp; Breakfast</title>
+<meta name="description" content="An open-fire kitchen on the highest point of Little Corn Island. Fresh-caught lobster and seafood, sunrise breakfasts, and vegetarian plates — open to everyone. Opening January 2027." />
+<meta property="og:title" content="Oasis · Little Corn Island Restaurant" />
+<meta property="og:description" content="An open-fire kitchen above the Caribbean — fresh-caught lobster and seafood, sunrise breakfasts, and vegetarian plates on Little Corn Island. Opening January 2027." />
+<meta property="og:type" content="restaurant" />
+<meta property="og:url" content="https://oasislittlecorn.com/" />
+<meta property="og:image" content="https://oasislittlecorn.com/assets/img/oasis_deck_bar_view.webp" />
+<meta property="og:image:alt" content="The open-air deck at Oasis overlooking the palms on Little Corn Island." />
+<meta property="og:site_name" content="Oasis" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Oasis · Little Corn Island Restaurant" />
+<meta name="twitter:description" content="An open-fire kitchen above the Caribbean — fresh-caught lobster and seafood, sunrise breakfasts, and vegetarian plates on Little Corn Island. Opening January 2027." />
+<meta name="twitter:image" content="https://oasislittlecorn.com/assets/img/oasis_deck_bar_view.webp" />
+<meta name="theme-color" content="#132E24" />
+<link rel="canonical" href="https://oasislittlecorn.com/" />
+
+<!-- Favicons -->
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="assets/favicon.svg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script>
+/* =====================================================================
+   ██  OASIS — EDIT YOUR WEBSITE CONTENT HERE  ██
+   =====================================================================
+
+   Everything on this site is generated from the SITE object below.
+   To change any text, image, link, price, or menu item:
+
+     1.  Open this file in any text editor.
+     2.  Find the line inside SITE = { ... } that you want to change.
+     3.  Edit only the text between the "quotation marks".
+     4.  Save the file, then re-upload it to your host.
+
+   Tips:
+     • To swap an image, replace the web address between the quotes.
+     • To add a menu item, copy a whole { n:"…", p:"$0", d:"…" } line
+       and paste it below another, keeping the comma.
+     • Don't remove the quotation marks, commas, or the { } brackets.
+   ===================================================================== */
+
+const SITE = {
+
+  /* ---- Brand ---- */
+  brandName: "Oasis",
+  openingTag: "Opening January 2027",
+
+  /* ---- Main "Reserve a table" action (currently WhatsApp) ---- */
+  reservationsUrl: "https://wa.me/12488129159",
+  reservationsLabel: "Reserve a table",
+
+  /* ---- Top navigation (label = what shows, id = which section it jumps to) ---- */
+  nav: [
+    { label: "Home",     id: "home" },
+    { label: "Menu",     id: "menus" },
+    { label: "Packages", id: "packages" },
+    { label: "Visit",    id: "visit" },
+    { label: "Weddings", id: "weddings" },
+    { label: "Contact",  id: "contact" },
+  ],
+
+  /* ---- Hero (the big opening screen) ---- */
+  hero: {
+    image: "assets/img/oasis_deck_bar_view.webp",
+    eyebrow: "The Lighthouse Retreat · Little Corn Island",
+    title: "OASIS",
+    headline: "An open-fire kitchen on Little Corn Island, perched above the Caribbean.",
+    subtitle: "Fresh-caught lobster and seafood, sunrise breakfasts, and garden plates — on the highest point of Little Corn Island.",
+    menuButtonLabel: "View the menu",
+    scrollLabel: "Scroll",
+  },
+
+  /* ---- Ethos ---- */
+  about: {
+    eyebrow: "Flavors of the island, naturally elevated",
+    heading: "A table shaped by the island",
+    lead: "Perched above the Caribbean beneath mango and coconut trees, our kitchen draws on the richness of island life — fresh seafood, tropical harvests, and ingredients rooted in volcanic soil.",
+    paragraphs: [
+      "Every plate follows the rhythm of the island — salt air, warm sun, and the unhurried pace of a place with no cars and no clocks.",
+      "Fresh-caught seafood meets plantain, cassava, coconut, and cacao, with herbs and produce from our garden and nearby farms. Cooked over wood fire, the food arrives bright and grounded — like a breath of sea air.",
+      "More than a restaurant, Oasis reflects Little Corn itself: relaxed, abundant, rooted in nature. A romantic dinner beneath the palms or a sunrise breakfast after yoga — either way, a meal you won't easily forget.",
+    ],
+    images: [
+      "assets/img/lighthouse_two_story.webp",
+      "assets/img/little_corn_beach_palms.webp",
+    ],
+  },
+
+  /* ---- The Experience (three moods) ---- */
+  experience: [
+    { k: "By day",   t: "Sunrise breakfasts, citrus-bright and light, after yoga on the point." },
+    { k: "By fire",  t: "Dinners over open flame as the light goes down over the water." },
+    { k: "From here",t: "The garden, nearby farms, and the day's catch — a few steps from the table." },
+  ],
+
+  /* ---- Menu (real, searchable text) ----
+     Add or edit dishes below. Each item is  { n:"Name", p:"$price", d:"description" }.
+     Leave d:"" for no description. Left and right are the two columns on screen. */
+  menu: {
+    eyebrow: "Breakfast · Lunch · Dinner at Oasis",
+    heading: "The Menu",
+    intro: "Our menu moves with the season, the garden, and the morning's catch — so this is a taste of the table rather than a fixed list. Ask what's best today.",
+    dietary: "Vegetarian, vegan, and pescatarian plates, plus allergy-conscious options — just let us know when you reserve.",
+    left: [
+      { group: "Small Plates", items: [
+        { n:"Arepas", p:"$8", d:"Crispy corn cakes with smoked chicken, nica cheese and pickled green mango, finished with verde sauce." },
+        { n:"Oasis Salad", p:"$7", d:"A refreshing mix of island fruits, cucumber, culantro, roasted peanuts and crispy rice, tossed in a honey-soy vinaigrette." },
+        { n:"Hummus", p:"$7", d:"Creamy hummus topped with herbs, almonds, roasted garlic and beets. Served with flatbread crisps and garden veggies." },
+      ]},
+      { group: "Beverages", items: [
+        { n:"Liquid Sunshine", p:"$5", d:"Tropical blend of mango, pineapple, ginger and carrot." },
+        { n:"PB Perk", p:"$5", d:"Iced coffee smoothie with cacao, banana, peanut butter and coconut." },
+        { n:"Coffee", p:"$2", d:"Locally roasted." },
+        { n:"Vanilla-Cardamom Cold Brew", p:"$4", d:"Smooth cold brew infused with vanilla and warm cardamom." },
+        { n:"Oasis Sun Tea", p:"$2", d:"Lightly sweetened with tropical fruits." },
+        { n:"Fresh Juice", p:"$3", d:"" },
+        { n:"Coconut Water", p:"$3", d:"" },
+      ]},
+    ],
+    right: [
+      { group: "Signature Dishes", items: [
+        { n:"Smoked Chicken", p:"$15", d:"Coconut husk smoked chicken leg, slow-roasted garlic sauce, creamy cassava mash and island vegetables." },
+        { n:"Grilled Fish Filet", p:"$15", d:"Fresh catch of the day glazed with tamarind, topped with house-made tropical salsa. Served with coconut rice and island vegetables." },
+        { n:"Rice Bowl", p:"$12", d:"Grilled pineapple skewer over coconut rice with stir-fried vegetables, a fried egg, pickles and your choice of chicken, fish or plantain." },
+        { n:"Hummus Wrap", p:"$9", d:"Flatbread wrap, greens, hummus, roasted beets & carrots, nica cheese, pickles. Add chicken +$2." },
+        { n:"Saffron Lobster Tail", p:"$16", d:"Grilled lobster tail with saffron herb butter, creamy cassava mash and island vegetables." },
+      ]},
+      { group: "Desserts", items: [
+        { n:"Mango Crème Brûlée", p:"$6", d:"Silky custard with fresh mango and a caramelized sugar top." },
+        { n:"Chocolate Banana Rum Tart", p:"$7", d:"Decadent chocolate filling, caramelized bananas and a hint of rum." },
+      ]},
+    ],
+    // Breakfast is kept as the sample-menu photo from the current site.
+    breakfastLabel: "Breakfast",
+    breakfastNote: "A sunrise menu of tropical fruit, fresh eggs, and island coffee. Sample menu below.",
+    breakfastImage: "assets/img/oasis_deck_bar_view.webp",
+
+    /* ---- Menu tab buttons ---- */
+    tabBreakfastLabel: "Breakfast",
+    tabBreakfastTime: "7:30–11am",
+    tabAllDayLabel: "Lunch & Dinner",
+
+    /* ---- "Evening at Oasis" card (shown above the Lunch & Dinner menu) ---- */
+    evening: {
+      eyebrow: "Evening at Oasis",
+      logoLine: "The Lighthouse · OASIS · Fire & Sea",
+      intro: "As the light drops over the Caribbean, our kitchen turns to wood fire and open flame. Fresh-caught seafood, garden harvests, and island vegetables — bright, grounded, and vibrant.",
+    },
+  },
+
+  breakfastMenu: {
+    title: "Breakfast Menu",
+    logo: "The Lighthouse OASIS GROVE TO TABLE",
+    eyebrow: "Sunrise at Oasis",
+    heading: "Breakfast",
+    intro: "A sunrise table — coconut bread, island coffee, fresh fruit, and slow-cooked specialties, served 7:30–11am. Grove to table from our garden and nearby farms.",
+    logoLine: "The Lighthouse · OASIS · Grove to Table",
+    categories: [
+      { group: "Light Starts", items: [
+        { n:"Island Fruits", p:"$5", d:"Fresh tropical fruits with honey." },
+        { n:"Smoothie Bowl", p:"$7", d:"Creamy banana, peanut butter and cacao base topped with toasted coconut granola." },
+        { n:"Eggs & Toast", p:"$6", d:"Local coconut bread, two eggs, and fruit jam" },
+      ]},
+      { group: "Beverages", items: [
+        { n:"Liquid Sunshine", p:"$5", d:"Mango, pineapple, ginger & carrot smoothie" },
+        { n:"PB Perk", p:"$5", d:"Iced coffee smoothie with cacao, banana, peanut butter and coconut." },
+        { n:"Coffee", p:"$2", d:"Locally roasted." },
+        { n:"Cardamom Cold Brew", p:"$4", d:"Smooth cold brew infused with vanilla and warm cardamom." },
+        { n:"Oasis Sun Tea", p:"$2", d:"Lightly sweetened with tropical fruits" },
+        { n:"Fresh Juice", p:"$3", d:"" },
+        { n:"Coconut Water", p:"$3", d:"" },
+      ]},
+      { group: "Specialties", items: [
+        { n:"Island Breakfast", p:"$10", d:"Crispy plantains with eggs, tropical fruit, nica cheese, and toasted coconut bread with island fruit jam." },
+        { n:"Lobster Soft Scramble", p:"$14", d:"Soft scrambled eggs with buttered lobster meat, coconut bread and crispy plantains" },
+        { n:"Smoked Chicken Breakfast Burrito", p:"$11", d:"Scrambled eggs, smoked chicken and nica cheese in toasted tortilla, with plantains and salsa" },
+        { n:"Coconut French Toast", p:"$10", d:"Coconut bread French toast with fresh fruit and honey" },
+        { n:"Banana Nut Oatmeal", p:"$8", d:"Warm oats with cinnamon, vanilla, and nuts, topped with caramelized banana and served with fruit" },
+      ]},
+    ],
+  },
+
+  /* ---- Our Story  (PLACEHOLDER — replace with your founders / chef note) ---- */
+  story: {
+    eyebrow: "The people behind Oasis",
+    heading: "Our Story",
+    paragraphs: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.",
+    ],
+    image: "assets/img/chefs_oasis_owners.webp",
+  },
+
+  /* ---- The Lighthouse Retreat + photo ribbon ---- */
+  retreat: {
+    eyebrow: "The setting",
+    heading: "The Lighthouse Retreat",
+    body: "Oasis is the kitchen of The Lighthouse Retreat — an adults-only eco-hotel on the highest point of Little Corn Island, named one of the world's Top 60 island hotels by National Geographic Traveller. Our table is open to Retreat guests and island visitors alike.",
+    linkUrl: "https://www.thelighthouselci.com/",
+    linkLabel: "Stay at the Retreat",
+    gallery: [
+      "assets/img/oasis_deck_bar_view.webp",
+      "assets/img/lighthouse_two_story.webp",
+      "assets/img/little_corn_beach_palms.webp",
+      "assets/img/oasis_garden_moonlight.webp",
+      "assets/img/chefs_oasis_owners.webp",
+      "assets/img/tropical_fruit_tart_editorial.webp",
+      "assets/img/editorial_hummus_bowl.webp",
+      "assets/img/island_breakfast_flatlay.webp"
+    ],
+  },
+
+  /* ---- Dining Packages (for staying guests) ---- */
+  packages: {
+    eyebrow: "For guests of The Lighthouse Retreat",
+    heading: "Dining Packages",
+    subheading: "Nourish your body, elevate your stay",
+    body: "Dining packages are available exclusively to guests of The Lighthouse Retreat. Once your stay is booked, choose the package that best fits your trip. To guarantee availability, please reserve at least five days before you arrive.",
+    tiers: [
+      { icon:"sun",   name:"Morning Glow",  tagline:"Begin the day feeling light, energized, and restored.", desc:["Daily breakfast at Oasis with your choice of beverage — coffee, tea, juice or coconut water."], price:"$12" },
+      { icon:"leaf",  name:"Balanced Path", tagline:"Steady nourishment for active, mindful days.", desc:["Daily breakfast at Oasis along with your choice of beverage.","Nightly family-style chef-prepared dinner with beverages and dessert."], price:"$36" },
+      { icon:"lotus", name:"Pure Journey",  tagline:"A complete relaxation experience.", desc:["Three daily meals from Oasis.","Beverages included — up to four daily."], price:"$55" },
+      { icon:"wave",  name:"Vital Retreat", tagline:"Elevated nourishment for body, mind, and soul.", desc:["Chef-crafted menus unique to your retreat, curated for your group.","Family-style breakfast, lunch, dinner and snack. Beverages included."], price:"$89" },
+    ],
+    priceUnit: "per person · per night",
+    badges: [
+      { t:"Dine with ease",           s:"Steps from your cabana" },
+      { t:"Local ingredients",         s:"Fresh from the island" },
+      { t:"Full-board curated dining", s:"Designed for your retreat" },
+    ],
+    formNote: "Tell us your dates and preferences, and we'll take care of the rest.",
+    formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdgYF55g7vPgtCh7FO8BDcZc3e7i4fYL4HTVZVjcn8RyNNEuQ/viewform",
+    formButtonLabel: "Open the booking form",
+  },
+
+  /* ---- Plan Your Visit ---- */
+  visit: {
+    eyebrow: "Plan your visit",
+    heading: "Come and dine",
+    items: [
+      { k:"Who can dine",  v:"Everyone's welcome — Oasis is open to the public, as well as guests of The Lighthouse Retreat." },
+      { k:"Hours",         v:"Open daily, year-round. Serving breakfast, lunch, and dinner." },
+      { k:"Reservations",  v:"Reserve by WhatsApp at +1 248 812 9159. Tables are limited on a small island, so we recommend booking ahead." },
+    ],
+  },
+
+  /* ---- Location & Getting Here ---- */
+  location: {
+    eyebrow: "Find us",
+    heading: "Location",
+    intro: "Find us among the mango trees, at the highest point of the island.",
+    image: "assets/img/little_corn_beach_palms.webp",
+    subheading: "Little Corn Island",
+    paragraphs: [
+      "Little Corn Island sits about 70 km off Nicaragua's Caribbean coast — just 3.8 square kilometers of turquoise water, white sand, jungle paths, and a barefoot, laid-back pace.",
+      "There are no cars, motorcycles, or roads. You explore on foot, along sandy paths through coconut groves and forest — a world away from city life.",
+    ],
+    gettingHereLabel: "Getting here",
+    gettingHere: "Reaching Little Corn is part of the adventure. Fly from Managua to Big Corn Island with La Costeña, then take the passenger ferry (about 30 minutes) to Little Corn. From the dock, we're about a 15-minute walk along the island paths — no cars, so travel light. Little Corn is a cash island — there are no ATMs, so bring what you'll need.",
+    mapQuery: "The Lighthouse Retreat, Little Corn Island, Nicaragua",
+  },
+
+  /* ---- Frequently Asked Questions (also feeds Google's FAQ rich results) ---- */
+  faq: {
+    eyebrow: "Good to know",
+    heading: "Frequently asked",
+    items: [
+      { q: "Is Oasis open to the public, or just Lighthouse Retreat guests?", a: "Everyone's welcome. Oasis is open to the public as well as to guests of The Lighthouse Retreat." },
+      { q: "Where is Oasis on Little Corn Island?", a: "On the highest point of the island, among the mango trees at The Lighthouse Retreat — about a 15-minute walk from the dock." },
+      { q: "Do I need a reservation?", a: "Tables are limited on a small island, so we recommend booking ahead by WhatsApp at +1 248 812 9159." },
+      { q: "Do you have vegetarian and vegan options?", a: "Yes — vegetarian, vegan, and pescatarian plates, plus allergy-conscious options on request." },
+      { q: "What are your hours?", a: "Open daily, year-round, for breakfast, lunch, and dinner. Breakfast is served 7:30–11am." },
+      { q: "How do I get to Little Corn Island?", a: "Fly from Managua to Big Corn Island with La Costeña, then take the passenger ferry (about 30 minutes) to Little Corn. From the dock, we're about a 15-minute walk — no cars, so travel light." },
+      { q: "Can I pay by card?", a: "Little Corn is largely a cash island with no ATMs, so we recommend bringing cash for your visit." },
+    ],
+  },
+
+  /* ---- Elopements & Weddings ---- */
+  weddings: {
+    eyebrow: "Celebrate with us",
+    heading: "Elopements & Weddings",
+    body: "Say your vows barefoot, above the Caribbean. We're creating a small collection of elopement and wedding experiences at The Lighthouse Retreat — intimate ceremonies, long-table dinners under the palms, and the island as your backdrop.",
+    note: "Planning a celebration? Share your dates and we'll be in touch as details open.",
+    ctaLabel: "Enquire about weddings",
+    ctaUrl: "https://wa.me/12488129159",
+  },
+
+  /* ---- Contact ---- */
+  contact: {
+    eyebrow: "Questions?",
+    heading: "Get in touch",
+    lead: "Questions, reservations, or a special request — we'd love to hear from you.",
+    whatsappLabel: "WhatsApp",
+    whatsappDisplay: "+1 248 812 9159",
+    whatsappUrl: "https://wa.me/12488129159",
+    emailLabel: "Email",
+    emailDisplay: "Nisha@OasisLittleCorn.com",
+    emailUrl: "mailto:Nisha@OasisLittleCorn.com",
+  },
+
+  /* ---- Footer ---- */
+  footer: {
+    signoff: "Come hungry. Leave unhurried.",
+    line: "Oasis at The Lighthouse Retreat · Little Corn Island, Nicaragua",
+    opening: "Opening January 2027",
+    whatsapp: "WhatsApp +1 248 812 9159",
+  },
+};
+</script>
+
+<!-- Structured data for search engines (Restaurant) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Oasis",
+  "description": "An open-fire kitchen at The Lighthouse Retreat on the highest point of Little Corn Island, Nicaragua. Fresh-caught lobster and seafood, sunrise breakfasts, garden and vegetarian plates. Open to everyone.",
+  "url": "https://oasislittlecorn.com/",
+  "image": "https://oasislittlecorn.com/assets/img/oasis_deck_bar_view.webp",
+  "servesCuisine": ["Caribbean", "Seafood", "Nicaraguan", "Vegetarian"],
+  "priceRange": "$$",
+  "acceptsReservations": "True",
+  "telephone": "+12488129159",
+  "email": "Nisha@OasisLittleCorn.com",
+  "hasMenu": "https://oasislittlecorn.com/#menus",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Little Corn Island",
+    "addressRegion": "South Caribbean Coast Autonomous Region",
+    "addressCountry": "NI"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 12.2899,
+    "longitude": -82.9829
+  },
+  "areaServed": "Little Corn Island",
+  "containedInPlace": {
+    "@type": "LodgingBusiness",
+    "name": "The Lighthouse Retreat",
+    "url": "https://www.thelighthouselci.com/"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "07:30",
+    "closes": "21:00"
+  }]
+}
+</script>
+
+<!-- FAQ structured data (powers "People also ask" results) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Is Oasis open to the public, or just Lighthouse Retreat guests?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Everyone's welcome. Oasis is open to the public as well as to guests of The Lighthouse Retreat." } },
+    { "@type": "Question", "name": "Where is Oasis on Little Corn Island?",
+      "acceptedAnswer": { "@type": "Answer", "text": "On the highest point of the island, among the mango trees at The Lighthouse Retreat — about a 15-minute walk from the dock." } },
+    { "@type": "Question", "name": "Do I need a reservation?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Tables are limited on a small island, so we recommend booking ahead by WhatsApp at +1 248 812 9159." } },
+    { "@type": "Question", "name": "Do you have vegetarian and vegan options?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — vegetarian, vegan, and pescatarian plates, plus allergy-conscious options on request." } },
+    { "@type": "Question", "name": "What are your hours?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Open daily, year-round, for breakfast, lunch, and dinner. Breakfast is served 7:30–11am." } },
+    { "@type": "Question", "name": "How do I get to Little Corn Island?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Fly from Managua to Big Corn Island with La Costeña, then take the passenger ferry (about 30 minutes) to Little Corn. From the dock, Oasis is about a 15-minute walk — no cars, so travel light." } },
+    { "@type": "Question", "name": "Can I pay by card?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Little Corn is largely a cash island with no ATMs, so we recommend bringing cash for your visit." } }
+  ]
+}
+</script>
+
+<style>
+/* =====================================================================
+   DESIGN TOKENS  —  "Dusk over the Caribbean"
+   ===================================================================== */
+:root{
+  --paper:#FFFCF1;
+  --paper-2:#F6F0DB;
+  --paper-3:#EFE7C8;
+  --ink:#163B2E;
+  --ink-2:#214F3E;
+  --sage:#6B7E6B;
+  --turquoise:#2A9D8F;
+  --turquoise-light:#7DD3C8;
+  --coral:#E76F51;
+  --mango:#E9B44C;
+  --lime:#A3BE8C;
+  --line:rgba(22,59,46,0.11);
+  --line-2:rgba(22,59,46,0.2);
+  --line-gold:rgba(233,180,76,0.4);
+  --f-display:"Fraunces",Georgia,serif;
+  --f-body:"Figtree",system-ui,-apple-system,sans-serif;
+  --f-hand:"Caveat",cursive;
+  --wrap:1200px; --pad-section:clamp(4.5rem,11vw,8rem); --radius:12px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap');
+*{ box-sizing:border-box; margin:0; padding:0; }
+html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+@media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+body{
+  background:var(--ink); color:var(--sand); font-family:var(--f-body);
+  line-height:1.75; font-size:clamp(1rem,0.96rem + 0.2vw,1.1rem);
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+body::before{
+  content:""; position:fixed; inset:0; z-index:-1; pointer-events:none;
+  background:
+    radial-gradient(120% 80% at 50% 120%, rgba(227,164,92,0.16), transparent 55%),
+    radial-gradient(90% 60% at 85% 0%, rgba(119,198,183,0.07), transparent 60%);
+}
+img{ display:block; max-width:100%; height:auto; }
+a{ color:inherit; text-decoration:none; }
+.wrap{ width:min(100% - 2.5rem, var(--wrap)); margin-inline:auto; }
+
+/* ---- type helpers ---- */
+.eyebrow{
+  font-family:var(--f-body); font-size:0.72rem; font-weight:600;
+  letter-spacing:0.24em; text-transform:uppercase; color:var(--ember);
+  display:inline-flex; align-items:center; gap:0.7em;
+}
+.eyebrow::before{ content:""; width:26px; height:1px; background:var(--ember); opacity:0.7; }
+.eyebrow.center{ justify-content:center; }
+.display{ font-family:var(--f-display); font-weight:400; line-height:1.04; letter-spacing:-0.01em; font-optical-sizing:auto; }
+.section{ padding-block:var(--pad-section); position:relative; }
+.section-h{ font-size:clamp(2rem,1.3rem + 3.4vw,3.6rem); margin-top:1rem; }
+.lead{ font-family:var(--f-display); font-weight:300; font-size:clamp(1.25rem,1.05rem + 1vw,1.7rem); line-height:1.5; color:var(--sand); font-optical-sizing:auto; }
+.muted{ color:var(--sage); }
+.prose p{ margin-top:1.15rem; color:var(--sage); max-width:64ch; }
+.prose p:first-child{ margin-top:0; }
+
+/* ---- buttons ---- */
+.btn{
+  --bg:var(--ember); --fg:#20140a;
+  display:inline-flex; align-items:center; gap:0.6em; background:var(--bg); color:var(--fg);
+  font-family:var(--f-body); font-weight:600; font-size:0.82rem; letter-spacing:0.12em; text-transform:uppercase;
+  padding:0.95em 1.6em; border-radius:100px; border:1px solid transparent;
+  transition:transform .25s ease, background .25s ease, box-shadow .25s ease; cursor:pointer; white-space:nowrap;
+}
+.btn:hover{ background:var(--ember-2); transform:translateY(-2px); box-shadow:0 10px 30px -12px rgba(227,164,92,0.6); }
+.btn:focus-visible{ outline:2px solid var(--sea); outline-offset:3px; }
+.btn.ghost{ --bg:transparent; --fg:var(--sand); border-color:var(--line-2); }
+.btn.ghost:hover{ --bg:rgba(242,234,217,0.06); box-shadow:none; }
+.textlink{ display:inline-flex; align-items:center; gap:0.5em; color:var(--sea); font-weight:500; border-bottom:1px solid rgba(119,198,183,0.4); padding-bottom:2px; transition:color .2s, border-color .2s; }
+.textlink:hover{ color:var(--ember); border-color:var(--ember); }
+.textlink::after{ content:"→"; transition:transform .2s; }
+.textlink:hover::after{ transform:translateX(4px); }
+
+/* ---- nav ---- */
+.nav{ position:fixed; inset:0 0 auto 0; z-index:50; display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1.1rem clamp(1.25rem,4vw,3rem); transition:background .35s, backdrop-filter .35s, border-color .35s, padding .35s; border-bottom:1px solid transparent; }
+.nav.scrolled{ background:rgba(11,30,27,0.82); backdrop-filter:blur(12px); border-bottom-color:var(--line); padding-block:0.75rem; }
+.brand{ font-family:var(--f-display); font-weight:500; font-size:1.35rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--sand); }
+.nav-links{ display:flex; align-items:center; gap:1.6rem; list-style:none; }
+.nav-links a{ font-size:0.82rem; letter-spacing:0.06em; color:var(--sand); opacity:0.86; transition:opacity .2s; position:relative; padding:0.2rem 0; }
+.nav-links a::after{ content:""; position:absolute; left:0; bottom:-2px; height:1px; width:0; background:var(--ember); transition:width .25s; }
+.nav-links a:hover{ opacity:1; } .nav-links a:hover::after{ width:100%; }
+.nav-cta{ margin-left:0.4rem; }
+.nav-toggle{ display:none; background:none; border:0; cursor:pointer; width:44px; height:44px; color:var(--sand); }
+.nav-toggle svg{ width:26px; height:26px; }
+.mobile-menu{ position:fixed; inset:0; z-index:60; background:rgba(9,24,22,0.97); backdrop-filter:blur(6px); display:flex; flex-direction:column; justify-content:center; align-items:center; gap:0.4rem; transform:translateY(-100%); transition:transform .4s cubic-bezier(.7,0,.2,1); }
+.mobile-menu.open{ transform:translateY(0); }
+.mobile-menu a{ font-family:var(--f-display); font-size:1.9rem; font-weight:300; color:var(--sand); padding:0.4rem 1rem; opacity:0.9; }
+.mobile-menu a:hover{ color:var(--ember); }
+.mobile-close{ position:absolute; top:1.2rem; right:1.4rem; background:none; border:0; color:var(--sand); cursor:pointer; width:44px; height:44px; }
+.mobile-close svg{ width:28px; height:28px; }
+
+/* ---- hero ---- */
+.hero{ position:relative; min-height:100svh; display:flex; align-items:center; justify-content:center; text-align:center; padding:7rem 1.25rem 3rem; overflow:hidden; }
+.hero-bg{ position:absolute; inset:0; z-index:0; }
+.hero-bg img{ width:100%; height:100%; object-fit:cover; opacity:0.55; filter:saturate(1.05) contrast(1.02); }
+.hero-bg::after{ content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(11,30,27,0.55) 0%, rgba(11,30,27,0.35) 40%, rgba(11,30,27,0.92) 100%), radial-gradient(90% 70% at 50% 108%, rgba(227,164,92,0.35), transparent 60%); }
+.hero-inner{ position:relative; z-index:1; max-width:62rem; }
+.hero-eyebrow{ justify-content:center; color:var(--sea); }
+.hero-eyebrow::before{ background:var(--sea); }
+.hero-title{ font-family:var(--f-display); font-weight:400; font-size:clamp(4.5rem,20vw,13rem); line-height:0.9; letter-spacing:0.06em; margin:1.1rem 0 0.4rem; text-shadow:0 2px 40px rgba(0,0,0,0.35); }
+.hero-headline{ font-family:var(--f-display); font-style:italic; font-weight:300; font-size:clamp(1.3rem,0.95rem + 1.7vw,2.1rem); color:var(--sand); letter-spacing:0.01em; margin-bottom:0.9rem; }
+.hero-sub{ color:var(--sage); max-width:40rem; margin:0 auto 2rem; font-size:1.02rem; }
+.hero-actions{ display:flex; gap:0.9rem; justify-content:center; flex-wrap:wrap; }
+.hero-open{ margin-top:1.6rem; font-size:0.72rem; letter-spacing:0.24em; text-transform:uppercase; color:var(--ember); }
+.scroll-cue{ position:absolute; bottom:1.6rem; left:50%; transform:translateX(-50%); z-index:1; color:var(--sand); opacity:0.55; font-size:0.68rem; letter-spacing:0.28em; text-transform:uppercase; display:flex; flex-direction:column; align-items:center; gap:0.5rem; }
+.scroll-cue span{ width:1px; height:34px; background:linear-gradient(var(--sand), transparent); animation:cue 2.2s ease-in-out infinite; }
+@keyframes cue{ 0%,100%{ transform:scaleY(0.5); opacity:0.3; transform-origin:top; } 50%{ transform:scaleY(1); opacity:0.8; } }
+
+/* ---- about ---- */
+.about-grid{ display:grid; grid-template-columns:1.05fr 0.95fr; gap:clamp(2rem,5vw,5rem); align-items:center; }
+.about-copy .prose{ margin-top:1.6rem; }
+.about-media{ display:grid; gap:1rem; }
+.about-media img{ width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:var(--radius); box-shadow:0 30px 60px -30px rgba(0,0,0,0.7); }
+.about-media img:nth-child(2){ aspect-ratio:5/4; margin-left:clamp(1.5rem,5vw,3.5rem); }
+
+/* ---- experience trio ---- */
+.experience{ border-block:1px solid var(--line); background:var(--ink-2); }
+.exp-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(1.5rem,4vw,3rem); }
+.exp-item{ padding-top:1.4rem; border-top:1px solid var(--line-2); }
+.exp-k{ font-family:var(--f-display); font-style:italic; font-size:1.5rem; color:var(--ember); margin-bottom:0.5rem; }
+.exp-t{ color:var(--sage); }
+
+/* ---- menu ---- */
+.menu-head{ text-align:center; max-width:46rem; margin-inline:auto; }
+.menu-wrap{ margin-top:clamp(2.5rem,6vw,4rem); display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem,6vw,5rem); }
+.menu-col{ display:flex; flex-direction:column; gap:2.6rem; }
+/* Breakfast has 3 uneven-length categories; masonry-style columns avoid ragged grid gaps */
+.breakfast-cols{ display:block; columns:2; column-gap:clamp(2rem,6vw,5rem); }
+.breakfast-cols .menu-col{ break-inside:avoid; margin-bottom:2.6rem; }
+.menu-group-title{ font-family:var(--f-body); font-size:0.8rem; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:var(--ember); padding-bottom:0.7rem; border-bottom:1px solid var(--line); margin-bottom:1.4rem; }
+.menu-item{ margin-bottom:1.3rem; }
+.menu-item:last-child{ margin-bottom:0; }
+.menu-item-head{ display:flex; align-items:baseline; gap:0.6rem; }
+.menu-item-name{ font-family:var(--f-display); font-size:1.18rem; font-weight:500; color:var(--sand); white-space:nowrap; }
+.menu-leader{ flex:1 1 auto; border-bottom:1px dotted var(--line-2); transform:translateY(-4px); min-width:1.2rem; }
+.menu-item-price{ font-family:var(--f-display); font-size:1.1rem; color:var(--ember); }
+.menu-item-desc{ color:var(--sage); font-size:0.94rem; line-height:1.6; margin-top:0.3rem; max-width:40ch; }
+.menu-dietary{ text-align:center; margin-top:clamp(2.5rem,5vw,3.5rem); color:var(--sage); font-style:italic; font-family:var(--f-display); font-size:1.05rem; }
+.breakfast{ margin-top:clamp(3rem,7vw,5rem); display:grid; grid-template-columns:0.9fr 1.1fr; gap:clamp(2rem,5vw,4rem); align-items:center; }
+.breakfast-copy .menu-group-title{ display:inline-block; }
+.breakfast figure{ border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:var(--ink-3); cursor:zoom-in; transition:border-color .3s, transform .3s; }
+.breakfast figure:hover{ border-color:var(--ember); transform:translateY(-4px); }
+
+/* ---- story ---- */
+.story{ }
+.story-grid{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem,5vw,4.5rem); align-items:center; }
+.story-media img{ width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:var(--radius); box-shadow:0 30px 60px -30px rgba(0,0,0,0.7); }
+
+/* ---- retreat + ribbon ---- */
+.retreat{ background:var(--ink-2); border-block:1px solid var(--line); }
+.retreat-head{ max-width:52rem; }
+.retreat-head .btn{ margin-top:1.8rem; }
+.ribbon{ margin-top:clamp(2.5rem,6vw,4rem); position:relative; }
+.ribbon::before,.ribbon::after{ content:""; position:absolute; top:0; bottom:0; width:12%; z-index:2; pointer-events:none; }
+.ribbon::before{ left:0; background:linear-gradient(90deg,var(--ink-2),transparent); }
+.ribbon::after{ right:0; background:linear-gradient(270deg,var(--ink-2),transparent); }
+.ribbon-track{ display:flex; gap:1rem; width:max-content; animation:slide 60s linear infinite; }
+.ribbon:hover .ribbon-track{ animation-play-state:paused; }
+.ribbon-track img{ height:clamp(210px,32vw,340px); width:auto; aspect-ratio:4/3; object-fit:cover; border-radius:var(--radius); cursor:pointer; transition:transform .4s, filter .4s; filter:saturate(0.98); }
+.ribbon-track img:hover{ transform:scale(1.02); filter:saturate(1.1); }
+@keyframes slide{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
+@media (prefers-reduced-motion: reduce){ .ribbon-track{ animation:none; flex-wrap:wrap; width:100%; justify-content:center; } .ribbon::before,.ribbon::after{ display:none; } }
+
+/* ---- packages ---- */
+.pkg-head{ text-align:center; max-width:46rem; margin-inline:auto; }
+.pkg-sub{ font-family:var(--f-display); font-style:italic; font-weight:300; font-size:clamp(1.15rem,1rem + 0.8vw,1.6rem); color:var(--ember); margin-top:0.7rem; }
+.pkg-body{ color:var(--sage); max-width:52rem; margin:1.2rem auto 0; }
+.pkg-cards{ margin-top:clamp(2.5rem,6vw,4rem); display:grid; grid-template-columns:repeat(4,1fr); gap:1.2rem; }
+.pkg-card{ background:var(--ink-3); border:1px solid var(--line); border-radius:8px; padding:2rem 1.5rem; display:flex; flex-direction:column; text-align:center; transition:transform .3s, border-color .3s, box-shadow .3s; }
+.pkg-card:hover{ transform:translateY(-6px); border-color:var(--ember); box-shadow:0 24px 50px -30px rgba(0,0,0,0.8); }
+.pkg-icon{ width:56px; height:56px; margin:0 auto 1.2rem; color:var(--ember); }
+.pkg-icon svg{ width:100%; height:100%; }
+.pkg-name{ font-family:var(--f-display); font-size:1.4rem; font-weight:500; }
+.pkg-tagline{ font-family:var(--f-display); font-style:italic; font-weight:300; color:var(--sea); font-size:1rem; margin:0.6rem 0 1.2rem; }
+.pkg-desc{ color:var(--sage); font-size:0.92rem; line-height:1.6; }
+.pkg-desc p + p{ margin-top:0.7rem; }
+.pkg-price-wrap{ margin-top:auto; padding-top:1.4rem; }
+.pkg-divider{ height:1px; background:var(--line); margin:1.4rem 0 1.2rem; }
+.pkg-price{ font-family:var(--f-display); font-size:2.4rem; font-weight:400; color:var(--sand); line-height:1; }
+.pkg-unit{ font-size:0.68rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--sage); margin-top:0.5rem; }
+.pkg-badges{ margin-top:clamp(2.5rem,5vw,3.5rem); display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; border-top:1px solid var(--line); padding-top:2.2rem; }
+.pkg-badge{ display:flex; flex-direction:column; align-items:center; text-align:center; gap:0.3rem; }
+.pkg-badge .bt{ font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase; font-weight:600; color:var(--sand); }
+.pkg-badge .bs{ font-family:var(--f-display); font-style:italic; color:var(--sage); font-size:0.98rem; }
+.pkg-form{ margin-top:clamp(2.5rem,5vw,3.5rem); max-width:720px; margin-inline:auto; text-align:center; }
+.pkg-form p{ color:var(--sage); margin-bottom:1.4rem; }
+.form-frame{ border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:#fff; }
+.form-frame iframe{ width:100%; height:640px; border:0; display:block; }
+.form-fallback{ margin-top:1rem; }
+
+/* ---- visit ---- */
+.visit{ border-block:1px solid var(--line); background:var(--ink-2); }
+.visit-grid{ display:grid; grid-template-columns:0.8fr 1.2fr; gap:clamp(2rem,5vw,4.5rem); align-items:start; }
+.visit-list{ display:flex; flex-direction:column; }
+.visit-item{ display:grid; grid-template-columns:auto 1fr; gap:1.5rem; padding:1.5rem 0; border-top:1px solid var(--line); align-items:baseline; }
+.visit-item:last-child{ border-bottom:1px solid var(--line); }
+.visit-k{ font-family:var(--f-body); font-size:0.75rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--ember); font-weight:600; }
+.visit-v{ color:var(--sand); }
+.visit-cta{ margin-top:2rem; }
+
+/* ---- location ---- */
+.loc-hero img{ width:100%; aspect-ratio:21/9; object-fit:cover; border-radius:var(--radius); margin-top:1.5rem; box-shadow:0 30px 60px -34px rgba(0,0,0,0.7); }
+.loc-grid{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(2rem,5vw,4.5rem); margin-top:clamp(2.5rem,5vw,4rem); align-items:stretch; }
+.loc-copy .subheading{ font-family:var(--f-display); font-size:clamp(1.5rem,1.2rem + 1vw,2rem); font-weight:400; margin-bottom:0.4rem; }
+.loc-getting{ margin-top:1.8rem; padding-top:1.6rem; border-top:1px solid var(--line); }
+.loc-getting .gh-label{ font-size:0.75rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--ember); font-weight:600; margin-bottom:0.6rem; }
+.loc-getting p{ color:var(--sage); max-width:56ch; }
+.loc-map{ border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; min-height:360px; }
+.loc-map iframe{ width:100%; height:100%; min-height:360px; border:0; display:block; filter:grayscale(0.2) saturate(1.1); }
+
+/* ---- weddings ---- */
+.weddings{ text-align:center; }
+.weddings-inner{ max-width:48rem; margin-inline:auto; }
+.weddings .lead{ margin-top:1.4rem; }
+.weddings .note{ color:var(--sage); margin-top:1.2rem; }
+.weddings .btn{ margin-top:2rem; }
+
+/* ---- contact ---- */
+.contact{ background:var(--ink-2); border-top:1px solid var(--line); text-align:center; }
+.contact-inner{ max-width:40rem; margin-inline:auto; }
+.contact .lead{ margin-top:1rem; }
+.contact-methods{ display:flex; flex-direction:column; gap:1.4rem; margin-top:2.4rem; align-items:center; }
+.contact-item{ display:flex; flex-direction:column; gap:0.3rem; }
+.contact-item .k{ font-size:0.72rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--sage); }
+.contact-item .v{ font-family:var(--f-display); font-size:clamp(1.3rem,1rem + 1.3vw,1.9rem); font-weight:400; }
+.contact-item .v:hover{ color:var(--ember); }
+
+/* ---- footer ---- */
+.footer{ padding:3.4rem 1.25rem; text-align:center; border-top:1px solid var(--line); }
+.footer .signoff{ font-family:var(--f-display); font-style:italic; font-weight:300; font-size:clamp(1.3rem,1.1rem + 1vw,1.9rem); color:var(--sand); margin-bottom:1.6rem; }
+.footer .fbrand{ font-family:var(--f-display); font-size:1.4rem; letter-spacing:0.2em; text-transform:uppercase; margin-bottom:0.8rem; }
+.footer p{ color:var(--sage); font-size:0.85rem; }
+.footer .dot{ color:var(--ember); margin:0 0.4rem; }
+
+/* ---- lightbox ---- */
+.lightbox{ position:fixed; inset:0; z-index:100; display:none; background:rgba(6,16,15,0.94); backdrop-filter:blur(4px); align-items:center; justify-content:center; padding:2rem; }
+.lightbox.open{ display:flex; }
+.lightbox img{ max-width:min(1100px,92vw); max-height:88vh; border-radius:var(--radius); box-shadow:0 40px 80px -30px #000; }
+.lightbox-close{ position:absolute; top:1.2rem; right:1.4rem; background:none; border:0; color:var(--sand); cursor:pointer; width:44px; height:44px; }
+.lightbox-close svg{ width:30px; height:30px; }
+
+/* ---- reveal ---- */
+.reveal{ opacity:0; transform:translateY(26px); transition:opacity .8s ease, transform .8s cubic-bezier(.2,.7,.2,1); }
+.reveal.in{ opacity:1; transform:none; }
+@media (prefers-reduced-motion: reduce){ .reveal{ opacity:1; transform:none; transition:none; } .scroll-cue span{ animation:none; } }
+
+/* ---- responsive ---- */
+@media (max-width: 1000px){
+  .pkg-cards{ grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width: 920px){
+  .nav-links{ display:none; }
+  .nav-toggle{ display:inline-flex; align-items:center; justify-content:center; }
+  .about-grid, .story-grid, .loc-grid, .visit-grid, .breakfast{ grid-template-columns:1fr; }
+  .about-media{ order:-1; grid-template-columns:1fr 1fr; }
+  .about-media img:nth-child(2){ margin-left:0; }
+  .menu-wrap{ grid-template-columns:1fr; gap:2.6rem; }
+  .breakfast-cols{ columns:1; }
+  .exp-grid{ grid-template-columns:1fr; }
+  .loc-hero img{ aspect-ratio:16/10; }
+}
+@media (max-width: 620px){
+  .pkg-badges{ grid-template-columns:1fr; }
+}
+@media (max-width: 520px){
+  .about-media{ grid-template-columns:1fr; }
+  .pkg-cards{ grid-template-columns:1fr; }
+  .hero-actions .btn{ width:100%; justify-content:center; }
+  .visit-item{ grid-template-columns:1fr; gap:0.4rem; }
+}
+
+/* ---- breakfast + menu tabs (added) ---- */
+.menu-tabs{ display:flex; gap:0.6rem; justify-content:center; margin:2.2rem auto 0; flex-wrap:wrap; }
+.menu-tab{
+  font-family:var(--f-body); font-size:0.82rem; font-weight:600; letter-spacing:0.14em; text-transform:uppercase;
+  padding:0.9rem 1.4rem; border-radius:100px; border:1px solid var(--line-2); background:transparent; color:var(--sand);
+  cursor:pointer; transition:all .25s ease; display:inline-flex; align-items:center; gap:0.6rem;
+}
+.menu-tab span{ font-weight:400; opacity:0.7; letter-spacing:0.06em; text-transform:none; font-size:0.82em; }
+.menu-tab.active{ background:var(--sand); color:var(--ink); border-color:var(--sand); }
+.menu-tab:hover{ border-color:var(--ember); color:var(--ember); }
+.menu-tab.active:hover{ background:var(--sand); color:var(--ink); }
+.menu-panel{ display:none; }
+.menu-panel.active{ display:block; }
+.breakfast-meta{ text-align:center; }
+.breakfast-logo{
+  font-family:var(--f-body); font-size:0.72rem; letter-spacing:0.32em; text-transform:uppercase; color:var(--sage);
+  margin-top:0.9rem; opacity:0.9;
+}
+@media (max-width: 900px){
+  .menu-wrap{ grid-template-columns:1fr; }
+}
+
+
+/* === Vibrant Island Informality Pass === */
+body{
+  background: var(--paper);
+  color: var(--ink);
+  background-image:
+    radial-gradient(90% 60% at 15% 10%, rgba(42,157,143,0.10), transparent 50%),
+    radial-gradient(80% 50% at 85% 20%, rgba(233,180,76,0.14), transparent 50%),
+    radial-gradient(60% 40% at 50% 90%, rgba(231,111,81,0.08), transparent 60%);
+}
+body::before{ opacity: 0.12; }
+
+/* Handwritten accent */
+.eyebrow{
+  font-family: var(--f-body);
+  gap: 0.9em;
+}
+.eyebrow::after{
+  content:"";
+  display:inline-block;
+  width:32px; height:12px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 12'%3E%3Cpath d='M2 8 Q 12 2 20 6 T 30 4' stroke='%23E9B44C' stroke-width='1.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  opacity:0.9;
+}
+
+/* Nav - informal but intentional */
+.nav{ backdrop-filter: none; }
+.nav.scrolled{
+  background: rgba(255,252,241,0.88);
+  backdrop-filter: blur(14px) saturate(1.1);
+  border-bottom-color: var(--line);
+}
+.brand{ letter-spacing: 0.16em; }
+.nav-links a{ font-weight:500; }
+.nav-links a::after{ background: var(--turquoise); }
+
+/* Hero - vibrant */
+.hero-bg img{ opacity:0.68; filter: saturate(1.15) contrast(1.05); }
+.hero-bg::after{
+  background:
+    linear-gradient(180deg, rgba(255,252,241,0.05) 0%, rgba(255,252,241,0.35) 45%, rgba(255,252,241,0.96) 92%),
+    radial-gradient(80% 60% at 70% 20%, rgba(42,157,143,0.22), transparent 55%),
+    radial-gradient(60% 50% at 20% 80%, rgba(233,180,76,0.18), transparent 60%);
+}
+.hero-title{ color: var(--ink); text-shadow: 0 4px 30px rgba(255,252,241,0.9); }
+.hero-headline{
+  font-style: normal;
+  font-weight: 400;
+  color: var(--ink);
+  position:relative;
+}
+.hero-headline::after{
+  content:"";
+  display:block;
+  width:84px; height:6px;
+  margin: 0.8rem auto 0;
+  background: var(--mango);
+  border-radius: 100px;
+  transform: rotate(-1.5deg);
+}
+.hero-sub{ color: var(--ink); opacity:0.7; }
+
+/* Buttons - vibrant */
+.btn{
+  --bg: var(--ink);
+  --fg: var(--paper);
+  border-radius: 100px;
+  padding: 1rem 1.8rem;
+  box-shadow: 0 8px 20px -10px rgba(22,59,46,0.3);
+}
+.btn:hover{ transform: translateY(-2px) rotate(-0.5deg); }
+.btn.ghost{
+  --bg: var(--paper);
+  --fg: var(--ink);
+  border-color: var(--ink);
+  background: rgba(255,255,255,0.6);
+}
+.hero-actions .btn:nth-child(2){
+  --bg: var(--turquoise);
+  border-color: var(--turquoise);
+  color: white;
+}
+
+/* About - informal grid with rotation */
+.about-media img{
+  border-radius: var(--radius);
+  box-shadow: 0 20px 40px -18px rgba(22,59,46,0.25);
+}
+.about-media img:nth-child(1){ transform: rotate(-1deg); }
+.about-media img:nth-child(2){ transform: rotate(1deg); }
+
+/* Experience - color blocks */
+.experience{ background: transparent; border: none; position:relative; }
+.experience::before{
+  content:"";
+  position:absolute; inset:0;
+  background: var(--paper-2);
+  transform: skewY(-1deg);
+  z-index:-1;
+}
+.exp-item{
+  border-top: none;
+  background: white;
+  padding: 1.6rem;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px -18px rgba(22,59,46,0.18);
+  border-left: 4px solid var(--turquoise);
+}
+.exp-item:nth-child(2){ border-left-color: var(--mango); transform: translateY(8px); }
+.exp-item:nth-child(3){ border-left-color: var(--coral); }
+.exp-k{ color: var(--ink); font-style: normal; font-weight: 600; font-family: var(--f-body); text-transform: uppercase; letter-spacing:0.12em; font-size:0.9rem; }
+.exp-k::before{
+  content:"•";
+  color: var(--turquoise);
+  margin-right:0.5em;
+}
+.exp-item:nth-child(2) .exp-k::before{ color: var(--mango); }
+.exp-item:nth-child(3) .exp-k::before{ color: var(--coral); }
+
+/* Menu - vibrant island */
+.section#menus::before, .section#menus::after{ display:none; }
+
+.menu-head{ position:relative; }
+.menu-head::after{
+  content:"from the garden & the day's catch";
+  font-family: var(--f-hand);
+  font-size: 1.4rem;
+  color: var(--coral);
+  display:block;
+  margin-top:0.6rem;
+  transform: rotate(-1deg);
+}
+
+.menu-tabs{
+  width: fit-content;
+  max-width: 100%;
+  background: white;
+  border: 1px solid var(--line);
+  padding: 0.4rem;
+  border-radius: 100px;
+  box-shadow: 0 8px 20px -14px rgba(22,59,46,0.2);
+}
+.menu-tab{
+  font-weight:600;
+  border-radius: 100px;
+  transition: all 0.25s cubic-bezier(0.34,1.56,0.64,1);
+}
+.menu-tab.active{
+  background: var(--ink);
+  color: var(--paper);
+  transform: scale(1.02);
+}
+.menu-tab[data-tab="breakfast"].active{ background: var(--mango); color: var(--ink); }
+.menu-tab[data-tab="allday"].active{ background: var(--turquoise); color: white; }
+
+.menu-group-title{
+  font-family: var(--f-body);
+  font-weight:700;
+  font-size:0.82rem;
+  letter-spacing:0.22em;
+  color: var(--ink);
+  border-bottom: 2px solid var(--ink);
+  position:relative;
+  display:inline-block;
+  padding-bottom:0.5rem;
+}
+.menu-group-title::after{
+  content:"";
+  position:absolute; bottom:-2px; left:0;
+  width:40%; height:2px;
+  background: var(--mango);
+}
+#panel-allday .menu-group-title::after{ background: var(--turquoise); }
+
+.menu-item{
+  background: rgba(255,255,255,0.6);
+  padding: 0.9rem 1rem 0.8rem;
+  border-radius: 10px;
+  margin-bottom: 0.7rem;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+.menu-item:hover{
+  background: white;
+  border-color: var(--line);
+  transform: translateY(-1px) rotate(-0.2deg);
+  box-shadow: 0 10px 20px -12px rgba(22,59,46,0.15);
+}
+.menu-item-name{ color: var(--ink); font-size:1.12rem; }
+.menu-item-price{
+  background: var(--paper-2);
+  padding: 0.15rem 0.6rem;
+  border-radius: 100px;
+  font-size:0.95rem;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+#panel-breakfast .menu-item-price{ background: rgba(233,180,76,0.18); border-color: rgba(233,180,76,0.3); color: var(--ink); }
+#panel-allday .menu-item-price{ background: rgba(42,157,143,0.12); border-color: rgba(42,157,143,0.2); }
+.menu-item-desc{
+  font-family: var(--f-body);
+  font-style: normal;
+  font-weight: 400;
+  color: var(--sage);
+  font-size:0.9rem;
+  line-height:1.5;
+}
+.menu-leader{ display:none; }
+
+.breakfast-meta{
+  background: linear-gradient(135deg, rgba(233,180,76,0.14), rgba(42,157,143,0.10));
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px dashed rgba(22,59,46,0.15);
+}
+.breakfast-logo{
+  font-family: var(--f-hand);
+  font-size:1.5rem;
+  letter-spacing:0.02em;
+  text-transform:none;
+  color: var(--ink);
+}
+
+/* Wavy divider */
+.section::after{
+  content:"";
+  display:block;
+  height:20px;
+  margin-top:4rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 20' preserveAspectRatio='none'%3E%3Cpath d='M0 10 Q 180 20 360 10 T 720 10 T 1080 10 T 1440 10' stroke='%23163B2E' stroke-opacity='0.08' stroke-width='1' fill='none'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+}
+.section:last-of-type::after{ display:none; }
+
+/* Retreat gallery - more playful */
+.ribbon-track img{ border-radius: var(--radius); }
+.ribbon-track img:nth-child(odd){ transform: rotate(-1deg); }
+.ribbon-track img:nth-child(even){ transform: rotate(1deg); }
+
+/* Packages - vibrant */
+.pkg-cards{ gap:1rem; }
+.pkg-card{
+  background: white;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
+}
+.pkg-card:hover{ transform: translateY(-6px) rotate(-0.5deg); }
+.pkg-card:nth-child(2){ background: linear-gradient(180deg, white, rgba(42,157,143,0.06)); }
+.pkg-card:nth-child(3){ background: linear-gradient(180deg, white, rgba(233,180,76,0.08)); }
+.pkg-card:nth-child(4){ background: linear-gradient(180deg, white, rgba(231,111,81,0.06)); }
+
+/* Visit - dark but with color pop */
+.visit{
+  background: var(--ink);
+  position:relative;
+  overflow:hidden;
+}
+.visit::before{
+  content:"";
+  position:absolute; inset:0;
+  background:
+    radial-gradient(60% 50% at 20% 20%, rgba(42,157,143,0.25), transparent 60%),
+    radial-gradient(50% 40% at 80% 80%, rgba(233,180,76,0.18), transparent 60%);
+  pointer-events:none;
+}
+.visit .btn{ background: var(--mango); color: var(--ink); border-color: var(--mango); }
+
+/* Lightbox, footer tweaks */
+#lightbox{ background: rgba(255,252,241,0.92); }
+#footer{ background: var(--ink); }
+
+
+/* ===== FINAL FIXES - padding, broken images, contrast ===== */
+.wrap{ width:min(100% - 2rem, var(--wrap)) !important; }
+@media (min-width:768px){ .wrap{ width:min(100% - 4rem, var(--wrap)) !important; } }
+
+.pkg-card{ padding:2.4rem 1.8rem !important; min-height:380px !important; }
+.pkg-cards{ gap:1.8rem !important; margin-top:3rem !important; }
+.pkg-badge{ padding:1.4rem 1.2rem !important; background:white !important; border:1px solid var(--line) !important; border-radius:12px !important; }
+.pkg-badges{ gap:1.2rem !important; margin-top:2.5rem !important; padding-top:2.5rem !important; }
+
+/* Header contrast fix - ensure solid background */
+.nav{
+  background: rgba(255,252,241,0.94) !important;
+  backdrop-filter: blur(16px) saturate(1.2) !important;
+  border-bottom: 1px solid var(--line) !important;
+}
+.nav.scrolled{ background: rgba(255,252,241,0.98) !important; }
+.brand, .nav-links a{ color: var(--ink) !important; }
+
+/* Hero contrast - make sure dark text on light overlay is readable */
+.hero-bg img{ opacity:0.48 !important; }
+.hero-bg::after{
+  background: linear-gradient(180deg, rgba(255,252,241,0.1) 0%, rgba(255,252,241,0.35) 35%, rgba(255,252,241,0.95) 88%, rgba(255,252,241,1) 100%) !important;
+}
+.hero-title{
+  color: var(--ink) !important;
+  text-shadow: 0 2px 0 rgba(255,252,241,0.9), 0 12px 40px rgba(255,252,241,0.7) !important;
+}
+
+/* Reserve button - fix dark-on-dark */
+.btn{
+  background: var(--ink) !important;
+  color: #FFFCF1 !important;
+  border: 1px solid var(--ink) !important;
+}
+.btn .btn-label, .btn{ color: #FFFCF1 !important; }
+.btn:hover{ background: #1e4d3a !important; color: #FFFCF1 !important; }
+.nav-cta .btn{ background: #163B2E !important; color: #FFFCF1 !important; }
+
+/* Sunrise / Sunset cards - matching your screenshot */
+.sunrise-card, .sunset-card{
+  background: linear-gradient(135deg, #FFF8E1 0%, #FFF3C4 50%, #FFFBEB 100%);
+  border: 1.5px dashed rgba(22,59,46,0.22);
+  border-radius: 20px;
+  padding: 2.8rem 2rem;
+  text-align: center;
+  margin: 2.5rem auto;
+  max-width: 100%;
+}
+.sunset-card{
+  background: linear-gradient(135deg, #FFE8D6 0%, #FFD8B8 50%, #FFF1E6 100%);
+  border-color: rgba(231,111,81,0.28);
+}
+.sunrise-card .script-title, .sunset-card .script-title{
+  font-family: "Fraunces", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.4rem, 1.1rem + 1.2vw, 2.1rem);
+  color: var(--ink);
+  margin: 0.8rem 0 1.2rem;
+}
+.sunrise-card p, .sunset-card p{ color: #5a6b5e; max-width: 48rem; margin-inline:auto; line-height:1.65; }
+.sunrise-card p + p, .sunset-card p + p{ margin-top:0.7rem; }
+
+/* Image fallback */
+.about-media img, .story-media img, .loc-hero img{ min-height:280px; background:#F6F0DB; object-fit:cover; }
+img{ background:#F6F0DB; }
+
+
+/* ===== GREEN SECTIONS CONTRAST FIX ===== */
+.visit{
+  background: #112E24 !important;
+  color: #FFFCF1 !important;
+}
+.visit .section-h{
+  color: #FFFCF1 !important;
+}
+.visit .eyebrow{
+  color: #E9B44C !important;
+}
+.visit .eyebrow::before{ background: #E9B44C !important; }
+.visit-k{
+  color: #7DD3C8 !important; /* turquoise light - high contrast on dark */
+  font-weight: 700 !important;
+}
+.visit-v{
+  color: #FFFCF1 !important;
+  opacity: 0.92 !important;
+  line-height: 1.65 !important;
+}
+.visit-item{
+  border-top-color: rgba(255,252,241,0.14) !important;
+}
+.visit-item:last-child{ border-bottom-color: rgba(255,252,241,0.14) !important; }
+.visit .btn{
+  background: #E9B44C !important;
+  color: #112E24 !important;
+  border-color: #E9B44C !important;
+  font-weight: 700 !important;
+}
+.visit .btn:hover{
+  background: #FFFCF1 !important;
+  color: #112E24 !important;
+}
+
+/* Packages - green icons and text contrast */
+.pkg-card{
+  background: white !important;
+  border: 1px solid rgba(22,59,46,0.12) !important;
+}
+.pkg-name{ color: #163B2E !important; }
+.pkg-tagline{ color: #2A9D8F !important; font-weight: 500 !important; }
+.pkg-desc{ color: #3a4f46 !important; }
+.pkg-price{ color: #163B2E !important; }
+.pkg-unit{ color: #6b7e6e !important; }
+.pkg-icon{ color: #2A9D8F !important; }
+
+/* Footer - ensure high contrast */
+#footer{
+  background: #0E261D !important;
+  color: rgba(255,252,241,0.88) !important;
+}
+#footer .fbrand{ color: #FFFCF1 !important; }
+#footer .signoff{ color: #E9B44C !important; }
+
+/* Experience - green border left but ensure text contrast */
+.exp-item{
+  background: white !important;
+  border-left-width: 5px !important;
+}
+.exp-t{ color: #3a4f46 !important; }
+
+/* Nav - ensure contrast when over green? Already light */
+.nav .btn{ color: #FFFCF1 !important; }
+
+/* Buttons globally - ensure text is always high contrast */
+.btn{ color: #FFFCF1 !important; }
+.btn.ghost{
+  background: white !important;
+  color: #163B2E !important;
+  border-color: #163B2E !important;
+}
+
+/* Remove any remaining iframe styling */
+.form-frame, iframe[src*="docs.google.com"]{ display:none !important; }
+.pkg-form{ text-align:center; padding: 2.5rem 1.5rem; background: white; border-radius:16px; border:1px solid var(--line); margin-top:2.5rem; }
+.pkg-form p{ color: #3a4f46 !important; font-size:1.05rem; margin-bottom:1.5rem; }
+
+
+/* ===== DARK GREEN SECTIONS - HIGH CONTRAST FIX ===== */
+/* Retreat - The Setting / The Lighthouse Retreat */
+.retreat{
+  background: #132E24 !important;
+  color: #FFFCF1 !important;
+}
+.retreat .eyebrow{
+  color: #E9B44C !important;
+}
+.retreat .eyebrow::before{ background: #E9B44C !important; }
+.retreat .section-h{
+  color: #FFFCF1 !important;
+}
+.retreat .lead{
+  color: rgba(255,252,241,0.88) !important;
+}
+.retreat .btn{
+  background: #FFFCF1 !important;
+  color: #132E24 !important;
+  border-color: #FFFCF1 !important;
+}
+.retreat .btn:hover{
+  background: #E9B44C !important;
+  color: #132E24 !important;
+  border-color: #E9B44C !important;
+}
+
+/* Contact - Questions? / Get in touch */
+.contact{
+  background: #112E24 !important;
+  color: #FFFCF1 !important;
+  border-top: 1px solid rgba(255,252,241,0.1) !important;
+}
+.contact .eyebrow{
+  color: #E9B44C !important;
+  justify-content: center;
+}
+.contact .eyebrow::before{ background: #E9B44C !important; }
+.contact .section-h{
+  color: #FFFCF1 !important;
+}
+.contact .lead{
+  color: rgba(255,252,241,0.85) !important;
+}
+.contact .contact-item .k{
+  color: #7DD3C8 !important; /* turquoise light - high contrast */
+  opacity: 1 !important;
+  font-weight: 700 !important;
+}
+.contact .contact-item .v{
+  color: #FFFCF1 !important;
+}
+.contact .contact-item .v:hover{
+  color: #E9B44C !important;
+}
+
+/* Visit section - also dark, ensure contrast */
+.visit{
+  background: #112E24 !important;
+  color: #FFFCF1 !important;
+}
+.visit .section-h{ color: #FFFCF1 !important; }
+.visit .eyebrow{ color: #E9B44C !important; }
+
+/* Story section - if it has dark bg, ensure light text */
+.story{
+  background: #FFFCF1;
+  color: #163B2E;
+}
+
+/* About - light section, keep dark text */
+.about{
+  background: #FFFCF1;
+  color: #163B2E;
+}
+
+/* Ensure all .display headings on dark backgrounds are light */
+.retreat .display, .contact .display, .visit .display{
+  color: #FFFCF1 !important;
+}
+
+/* Remove any remaining form iframe container */
+.pkg-form .form-frame, .pkg-form iframe{ display:none !important; }
+.pkg-form{
+  background: white !important;
+  border: 1.5px solid rgba(22,59,46,0.12) !important;
+  border-radius: 16px !important;
+  padding: 2.5rem 1.5rem !important;
+  text-align: center !important;
+  max-width: 640px !important;
+  margin: 3rem auto 0 !important;
+}
+.pkg-form p{
+  color: #3a4f46 !important;
+  margin-bottom: 1.5rem !important;
+}
+.pkg-form .btn{
+  background: #163B2E !important;
+  color: #FFFCF1 !important;
+}
+
+/* Extra: fix any other dark sections */
+.section.weddings{
+  background: #FFFCF1 !important;
+  color: #163B2E !important;
+}
+
+
+/* ===== BUTTON PADDING FIX - per user feedback ===== */
+.btn{
+  padding: 1.05em 2.4em !important;
+  letter-spacing: 0.16em !important;
+  line-height: 1.1 !important;
+  min-height: 48px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.btn.ghost{
+  padding: 1.05em 2.2em !important;
+}
+.nav .btn, .nav-cta .btn{
+  padding: 0.85em 1.9em !important;
+  min-height: 44px !important;
+}
+.visit-cta.btn, .pkg-form .btn{
+  padding: 1.15em 2.6em !important;
+  min-height: 50px !important;
+}
+
+
+/* ===== SUNRISE & SUNSET CARDS - MATCHED FORMATTING, KEEP COLORS ===== */
+.sunrise-card, .sunset-card{
+  background: linear-gradient(135deg, #FFF8E1 0%, #FFF3C4 50%, #FFFBEB 100%);
+  border: 1.5px dashed rgba(22,59,46,0.22);
+  border-radius: 20px;
+  padding: 2.8rem 2rem;
+  text-align: center;
+  margin: 2.5rem auto;
+  max-width: 100%;
+}
+.sunset-card{
+  background: linear-gradient(135deg, #FFE8D6 0%, #FFD8B8 50%, #FFF1E6 100%) !important;
+  border-color: rgba(231,111,81,0.28) !important;
+}
+.sunrise-card .script-title, .sunset-card .script-title,
+.sunrise-card .breakfast-logo, .sunset-card .breakfast-logo{
+  font-family: "Fraunces", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.4rem, 1.1rem + 1.2vw, 2.1rem);
+  color: var(--ink);
+  margin: 0.8rem 0 1.2rem;
+  line-height: 1.2;
+}
+.sunrise-card p, .sunset-card p{
+  color: #5a6b5e;
+  max-width: 48rem;
+  margin-inline: auto;
+  line-height: 1.65;
+  font-size: 1.02rem;
+}
+/* Ensure eyebrow spacing identical */
+.sunrise-card .eyebrow, .sunset-card .eyebrow{
+  justify-content: center;
+  margin-bottom: 0.2rem;
+}
+
+/* ---- FAQ ---- */
+.faq-inner{ max-width:52rem; margin:0 auto; text-align:center; }
+.faq-list{ margin-top:2.6rem; text-align:left; display:flex; flex-direction:column; gap:0.9rem; }
+.faq-item{
+  background:white; border:1px solid var(--line); border-radius:16px;
+  padding:0.4rem 1.4rem; box-shadow:0 8px 20px -18px rgba(22,59,46,0.25);
+  transition:border-color .2s ease;
+}
+.faq-item[open]{ border-color:rgba(42,157,143,0.4); }
+.faq-item summary{
+  list-style:none; cursor:pointer; padding:1.15rem 0;
+  font-family:var(--f-display); font-size:1.12rem; color:var(--ink);
+  display:flex; align-items:center; justify-content:space-between; gap:1rem;
+}
+.faq-item summary::-webkit-details-marker{ display:none; }
+.faq-item summary::after{
+  content:"+"; font-family:var(--f-body); font-weight:400; font-size:1.5rem;
+  color:var(--turquoise); line-height:1; transition:transform .2s ease; flex:none;
+}
+.faq-item[open] summary::after{ content:"–"; }
+.faq-a{ padding:0 0 1.15rem; }
+.faq-a p{ margin:0; color:var(--sage); font-size:1rem; line-height:1.7; max-width:44rem; }
+
+</style>
+</head>
+
+<body>
+<a href="#home" style="position:absolute;left:-9999px;top:0;background:var(--ember);color:#20140a;padding:.6rem 1rem;z-index:200;" onfocus="this.style.left='1rem';this.style.top='1rem'" onblur="this.style.left='-9999px'">Skip to content</a>
+
+<header class="nav" id="nav"></header>
+<nav class="mobile-menu" id="mobileMenu" aria-hidden="true"></nav>
+<main id="app"></main>
+<footer class="footer" id="footer"></footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged image">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close image">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <img id="lightboxImg" alt="" />
+</div>
+
+<noscript>
+  <div style="padding:3rem 1.5rem;max-width:40rem;margin:auto;text-align:center">
+    <h1 style="font-family:Georgia,serif">Oasis · Little Corn Island Restaurant</h1>
+    <p>An open-fire kitchen above the Caribbean — fresh-caught lobster and seafood, sunrise breakfasts, and vegetarian plates at The Lighthouse Retreat. Opening January 2027.</p>
+    <p>WhatsApp +1 248 812 9159 · Nisha@OasisLittleCorn.com</p>
+    <p>Please enable JavaScript to view the full site.</p>
+  </div>
+</noscript>
+
+<script>
+/* =====================================================================
+   RENDER — builds the page from SITE. You normally never edit below.
+   ===================================================================== */
+const $ = (s, r=document) => r.querySelector(s);
+const esc = (s='') => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const imgFallback = "this.style.opacity=0;this.style.background='linear-gradient(135deg,var(--ink-3),var(--ink-2))';";
+
+/* Descriptive, keyworded alt text keyed by image filename (image SEO + accessibility) */
+const ALT = {
+  oasis_deck_bar_view: "The open-air deck at Oasis restaurant overlooking the palms, Little Corn Island",
+  lighthouse_two_story: "The two-story wooden Lighthouse Retreat building with hammocks, Little Corn Island",
+  little_corn_beach_palms: "Leaning palms over turquoise water on a Little Corn Island beach",
+  chefs_oasis_owners: "The chefs and owners behind Oasis on Little Corn Island",
+  oasis_garden_moonlight: "The Oasis garden under moonlight at The Lighthouse Retreat",
+  tropical_fruit_tart_editorial: "Tropical mango fruit tart plated at Oasis, Little Corn Island",
+  editorial_hummus_bowl: "Garden hummus bowl with beets and coconut chips at Oasis",
+  island_breakfast_flatlay: "Island breakfast with plantains, eggs and greens at Oasis",
+};
+const altFor = (src='') => { const m = String(src).match(/([a-z0-9_]+)\.webp/i); return (m && ALT[m[1]]) || "Oasis restaurant on Little Corn Island"; };
+
+const ICONS = {
+  sun:  '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="24" cy="26" r="7"/><path d="M24 11v3M35 15l-2 2M13 15l2 2M9 26h3M36 26h3M8 34h32"/></svg>',
+  leaf: '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 34c0-11 8-19 20-20 1 12-7 21-20 20Z"/><path d="M14 34c4-6 9-10 16-13"/></svg>',
+  lotus:'<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M24 13c3 4 4 8 4 13 0 0-4 3-4 3s-4-3-4-3c0-5 1-9 4-13Z"/><path d="M20 26c-4-2-8-2-11 0 2 5 7 8 15 8s13-3 15-8c-3-2-7-2-11 0"/></svg>',
+  wave: '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M7 22c3-4 6-4 9 0M23 22c3-4 6-4 9 0M15 30c3-4 6-4 9 0M31 30c2.5-3.4 5-3.8 7.5-1.2M7 30c1.5-2 3-2.4 4.5-1"/></svg>',
+};
+
+/* ---------- NAV ---------- */
+function renderNav(){
+  const nav = $('#nav');
+  const links = SITE.nav.map(n => `<li><a href="#${n.id}">${esc(n.label)}</a></li>`).join('');
+  nav.innerHTML = `
+    <a class="brand" href="#home">${esc(SITE.brandName)}</a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        ${links}
+        <li class="nav-cta"><a class="btn" href="${esc(SITE.reservationsUrl)}" target="_blank" rel="noopener">${esc(SITE.reservationsLabel)}</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>`;
+  const mm = $('#mobileMenu');
+  mm.innerHTML = `
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    ${SITE.nav.map(n=>`<a href="#${n.id}">${esc(n.label)}</a>`).join('')}
+    <a href="${esc(SITE.reservationsUrl)}" target="_blank" rel="noopener" style="color:var(--ember)">${esc(SITE.reservationsLabel)}</a>`;
+  const open = () => { mm.classList.add('open'); mm.setAttribute('aria-hidden','false'); $('#navToggle').setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; };
+  const close = () => { mm.classList.remove('open'); mm.setAttribute('aria-hidden','true'); $('#navToggle').setAttribute('aria-expanded','false'); document.body.style.overflow=''; };
+  $('#navToggle').addEventListener('click', open);
+  $('#mobileClose').addEventListener('click', close);
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+}
+
+/* ---------- SECTIONS ---------- */
+function heroSection(){
+  const h = SITE.hero;
+  return `
+  <section class="hero" id="home">
+    <div class="hero-bg">${h.image ? `<img src="${esc(h.image)}" alt="The open-air deck at Oasis restaurant overlooking the palms, Little Corn Island" onerror="${imgFallback}">` : ''}</div>
+    <div class="hero-inner reveal">
+      <span class="eyebrow hero-eyebrow">${esc(h.eyebrow)}</span>
+      <div class="hero-title" aria-hidden="true">${esc(h.title)}</div>
+      <h1 class="hero-headline">${esc(h.headline)}</h1>
+      <p class="hero-sub">${esc(h.subtitle)}</p>
+      <div class="hero-actions">
+        <a class="btn" href="${esc(SITE.reservationsUrl)}" target="_blank" rel="noopener">${esc(SITE.reservationsLabel)}</a>
+        <a class="btn ghost" href="#menus">${esc(h.menuButtonLabel)}</a>
+      </div>
+      <div class="hero-open">${esc(SITE.openingTag)}</div>
+    </div>
+    <div class="scroll-cue"><span></span>${esc(h.scrollLabel)}</div>
+  </section>`;
+}
+
+function aboutSection(){
+  const a = SITE.about;
+  return `
+  <section class="section" id="about">
+    <div class="wrap about-grid">
+      <div class="about-copy reveal">
+        <span class="eyebrow">${esc(a.eyebrow)}</span>
+        <h2 class="display section-h">${esc(a.heading)}</h2>
+        <p class="lead" style="margin-top:1.6rem">${esc(a.lead)}</p>
+        <div class="prose">${a.paragraphs.map(p=>`<p>${esc(p)}</p>`).join('')}</div>
+      </div>
+      <div class="about-media reveal">
+        ${a.images.map(src=>`<img src="${esc(src)}" alt="${esc(altFor(src))}" loading="lazy" data-zoom onerror="${imgFallback}">`).join('')}
+      </div>
+    </div>
+  </section>`;
+}
+
+function experienceSection(){
+  return `
+  <section class="section experience">
+    <div class="wrap">
+      <div class="exp-grid">
+        ${SITE.experience.map(e=>`
+          <div class="exp-item reveal">
+            <div class="exp-k">${esc(e.k)}</div>
+            <div class="exp-t">${esc(e.t)}</div>
+          </div>`).join('')}
+      </div>
+    </div>
+  </section>`;
+}
+
+function menuItem(it){
+  return `
+    <div class="menu-item">
+      <div class="menu-item-head">
+        <span class="menu-item-name">${esc(it.n)}</span>
+        <span class="menu-leader"></span>
+        <span class="menu-item-price">${esc(it.p)}</span>
+      </div>
+      ${it.d ? `<p class="menu-item-desc">${esc(it.d)}</p>` : ''}
+    </div>`;
+}
+function menuColumn(groups){
+  return `<div class="menu-col">${groups.map(g=>`
+    <div class="menu-group">
+      <div class="menu-group-title">${esc(g.group)}</div>
+      ${g.items.map(menuItem).join('')}
+    </div>`).join('')}</div>`;
+}
+
+function menusSection(){
+  const m = SITE.menu;
+  const b = SITE.breakfastMenu;
+  const menuTabs = `
+    <div class="menu-tabs reveal" role="tablist" aria-label="Menu sections">
+      <button class="menu-tab active" data-tab="breakfast" id="tab-breakfast" role="tab" aria-selected="true" aria-controls="panel-breakfast" tabindex="0">${esc(m.tabBreakfastLabel)} <span>${esc(m.tabBreakfastTime)}</span></button>
+      <button class="menu-tab" data-tab="allday" id="tab-allday" role="tab" aria-selected="false" aria-controls="panel-allday" tabindex="-1">${esc(m.tabAllDayLabel)}</button>
+    </div>
+  `;
+  const breakfastCols = b.categories.map(col => `
+    <div class="menu-col">
+      <div class="menu-group-title">${esc(col.group)}</div>
+      ${col.items.map(i => `
+        <div class="menu-item">
+          <div class="menu-item-head">
+            <div class="menu-item-name">${esc(i.n)}</div>
+            <div class="menu-leader"></div>
+            <div class="menu-item-price">${esc(i.p)}</div>
+          </div>
+          ${i.d ? `<div class="menu-item-desc">${esc(i.d)}</div>` : ''}
+        </div>
+      `).join('')}
+    </div>
+  `).join('');
+
+  const breakfastHTML = `
+    <div class="menu-panel active" id="panel-breakfast" role="tabpanel" aria-labelledby="tab-breakfast">
+      <div class="sunrise-card reveal">
+        <span class="eyebrow center">${esc(b.eyebrow)}</span>
+        <div class="script-title">${esc(b.logoLine)}</div>
+        <p>${esc(b.intro)}</p>
+      </div>
+      <div class="menu-wrap breakfast-cols reveal" style="margin-top:2.5rem">
+        ${breakfastCols}
+      </div>
+    </div>
+  `;
+
+  const ev = m.evening || {};
+  const sunsetCard = `
+    <div class="sunset-card reveal">
+      <span class="eyebrow center">${esc(ev.eyebrow)}</span>
+      <div class="script-title">${esc(ev.logoLine)}</div>
+      <p>${esc(ev.intro)}</p>
+    </div>
+  `;
+  const alldayHTML = `
+    <div class="menu-panel" id="panel-allday" role="tabpanel" aria-labelledby="tab-allday" hidden>
+      ${sunsetCard}
+      <div class="menu-wrap reveal" style="margin-top:2.5rem">
+        ${menuColumn(m.left)}
+        ${menuColumn(m.right)}
+      </div>
+      <p class="menu-dietary reveal">${esc(m.dietary)}</p>
+    </div>
+  `;
+
+  return `
+  <section class="section" id="menus">
+    <div class="wrap">
+      <div class="menu-head reveal">
+        <span class="eyebrow center">${esc(m.eyebrow)}</span>
+        <h2 class="display section-h">${esc(m.heading)}</h2>
+        <p class="muted" style="margin-top:1rem">${esc(m.intro)}</p>
+      </div>
+      ${menuTabs}
+      ${breakfastHTML}
+      ${alldayHTML}
+    </div>
+  </section>`;
+}
+
+function wireMenuTabs(){
+  const tabs = Array.from(document.querySelectorAll('.menu-tab'));
+  const panels = { breakfast: document.getElementById('panel-breakfast'), allday: document.getElementById('panel-allday') };
+  function activate(t, focus){
+    tabs.forEach(x => {
+      const on = x === t;
+      x.classList.toggle('active', on);
+      x.setAttribute('aria-selected', on ? 'true' : 'false');
+      x.tabIndex = on ? 0 : -1;
+    });
+    const id = t.dataset.tab;
+    Object.entries(panels).forEach(([k,el]) => {
+      if(!el) return;
+      const on = k === id;
+      el.classList.toggle('active', on);
+      el.hidden = !on;
+    });
+    if(focus) t.focus();
+  }
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => activate(t, false));
+    t.addEventListener('keydown', e => {
+      if(e.key === 'ArrowRight' || e.key === 'ArrowDown'){ e.preventDefault(); activate(tabs[(i+1)%tabs.length], true); }
+      else if(e.key === 'ArrowLeft' || e.key === 'ArrowUp'){ e.preventDefault(); activate(tabs[(i-1+tabs.length)%tabs.length], true); }
+      else if(e.key === 'Home'){ e.preventDefault(); activate(tabs[0], true); }
+      else if(e.key === 'End'){ e.preventDefault(); activate(tabs[tabs.length-1], true); }
+    });
+  });
+}
+
+
+function storySection(){
+  const s = SITE.story;
+  return `
+  <section class="section story" id="story">
+    <div class="wrap story-grid">
+      <div class="story-media reveal">
+        <img src="${esc(s.image)}" alt="${esc(altFor(s.image))}" loading="lazy" data-zoom onerror="${imgFallback}">
+      </div>
+      <div class="story-copy reveal">
+        <span class="eyebrow">${esc(s.eyebrow)}</span>
+        <h2 class="display section-h">${esc(s.heading)}</h2>
+        <div class="prose" style="margin-top:1.4rem">${s.paragraphs.map(p=>`<p>${esc(p)}</p>`).join('')}</div>
+      </div>
+    </div>
+  </section>`;
+}
+
+function retreatSection(){
+  const r = SITE.retreat;
+  const imgs = r.gallery.concat(r.gallery);
+  return `
+  <section class="section retreat" id="retreat">
+    <div class="wrap retreat-head reveal">
+      <span class="eyebrow">${esc(r.eyebrow)}</span>
+      <h2 class="display section-h">${esc(r.heading)}</h2>
+      <p class="lead" style="margin-top:1.4rem;max-width:48rem">${esc(r.body)}</p>
+      <a class="btn" href="${esc(r.linkUrl)}" target="_blank" rel="noopener">${esc(r.linkLabel)}</a>
+    </div>
+    <div class="ribbon reveal" aria-label="Photos of The Lighthouse Retreat">
+      <div class="ribbon-track">
+        ${imgs.map(src=>`<img src="${esc(src)}" alt="${esc(altFor(src))}" loading="lazy" data-zoom onerror="${imgFallback}">`).join('')}
+      </div>
+    </div>
+  </section>`;
+}
+
+function packagesSection(){
+  const p = SITE.packages;
+  const hasForm = !!p.formUrl;
+  const cards = p.tiers.map(t => `
+    <div class="pkg-card reveal">
+      <div class="pkg-icon">${ICONS[t.icon]||''}</div>
+      <div class="pkg-name">${esc(t.name)}</div>
+      <div class="pkg-tagline">${esc(t.tagline)}</div>
+      <div class="pkg-desc">${t.desc.map(d=>`<p>${esc(d)}</p>`).join('')}</div>
+      <div class="pkg-price-wrap">
+        <div class="pkg-divider"></div>
+        <div class="pkg-price">${esc(t.price)}</div>
+        <div class="pkg-unit">${esc(p.priceUnit)}</div>
+      </div>
+    </div>`).join('');
+  const badges = p.badges.map(b => `
+    <div class="pkg-badge">
+      <div class="bt">${esc(b.t)}</div>
+      <div class="bs">${esc(b.s)}</div>
+    </div>`).join('');
+  return `
+  <section class="section" id="packages">
+    <div class="wrap">
+      <div class="pkg-head reveal">
+        <span class="eyebrow center">${esc(p.eyebrow)}</span>
+        <h2 class="display section-h">${esc(p.heading)}</h2>
+        <p class="pkg-sub">${esc(p.subheading)}</p>
+        <p class="pkg-body">${esc(p.body)}</p>
+      </div>
+      <div class="pkg-cards">${cards}</div>
+      <div class="pkg-badges reveal">${badges}</div>
+      ${hasForm ? `
+      <div class="pkg-form reveal">
+        <p>${esc(p.formNote)}</p>
+        <a class="btn" href="${esc(p.formUrl)}" target="_blank" rel="noopener">${esc(p.formButtonLabel)}</a>
+      </div>` : ''}
+    </div>
+  </section>`;
+}
+
+function visitSection(){
+  const v = SITE.visit;
+  return `
+  <section class="section visit" id="visit">
+    <div class="wrap visit-grid">
+      <div class="reveal">
+        <span class="eyebrow">${esc(v.eyebrow)}</span>
+        <h2 class="display section-h">${esc(v.heading)}</h2>
+        <a class="btn visit-cta" href="${esc(SITE.reservationsUrl)}" target="_blank" rel="noopener">${esc(SITE.reservationsLabel)}</a>
+      </div>
+      <div class="visit-list reveal">
+        ${v.items.map(i=>`
+          <div class="visit-item">
+            <div class="visit-k">${esc(i.k)}</div>
+            <div class="visit-v">${esc(i.v)}</div>
+          </div>`).join('')}
+      </div>
+    </div>
+  </section>`;
+}
+
+function locationSection(){
+  const l = SITE.location;
+  const map = `https://www.google.com/maps?q=${encodeURIComponent(l.mapQuery)}&output=embed`;
+  return `
+  <section class="section" id="location">
+    <div class="wrap">
+      <div class="reveal" style="max-width:52rem">
+        <span class="eyebrow">${esc(l.eyebrow)}</span>
+        <h2 class="display section-h">${esc(l.heading)}</h2>
+        <p class="lead" style="margin-top:1.3rem">${esc(l.intro)}</p>
+      </div>
+      <div class="loc-hero reveal">
+        <img src="${esc(l.image)}" alt="${esc(altFor(l.image))}" loading="lazy" data-zoom onerror="${imgFallback}">
+      </div>
+      <div class="loc-grid">
+        <div class="loc-copy reveal">
+          <h3 class="subheading">${esc(l.subheading)}</h3>
+          <div class="prose">${l.paragraphs.map(p=>`<p>${esc(p)}</p>`).join('')}</div>
+          <div class="loc-getting">
+            <div class="gh-label">${esc(l.gettingHereLabel)}</div>
+            <p>${esc(l.gettingHere)}</p>
+          </div>
+        </div>
+        <div class="loc-map reveal">
+          <iframe src="${map}" title="Map of ${esc(l.mapQuery)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="width:100%; min-height:380px; border:1px solid rgba(22,59,46,0.12); border-radius:12px;"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>`;
+}
+
+function weddingsSection(){
+  const w = SITE.weddings;
+  return `
+  <section class="section weddings" id="weddings">
+    <div class="wrap weddings-inner reveal">
+      <span class="eyebrow center">${esc(w.eyebrow)}</span>
+      <h2 class="display section-h">${esc(w.heading)}</h2>
+      <p class="lead">${esc(w.body)}</p>
+      <p class="note">${esc(w.note)}</p>
+      <a class="btn" href="${esc(w.ctaUrl)}" target="_blank" rel="noopener">${esc(w.ctaLabel)}</a>
+    </div>
+  </section>`;
+}
+
+function contactSection(){
+  const c = SITE.contact;
+  return `
+  <section class="section contact" id="contact">
+    <div class="wrap contact-inner reveal">
+      <span class="eyebrow center">${esc(c.eyebrow)}</span>
+      <h2 class="display section-h">${esc(c.heading)}</h2>
+      <p class="lead">${esc(c.lead)}</p>
+      <div class="contact-methods">
+        <a class="contact-item" href="${esc(c.whatsappUrl)}" target="_blank" rel="noopener">
+          <span class="k">${esc(c.whatsappLabel)}</span><span class="v">${esc(c.whatsappDisplay)}</span>
+        </a>
+        <a class="contact-item" href="${esc(c.emailUrl)}">
+          <span class="k">${esc(c.emailLabel)}</span><span class="v">${esc(c.emailDisplay)}</span>
+        </a>
+      </div>
+    </div>
+  </section>`;
+}
+
+function faqSection(){
+  const f = SITE.faq;
+  const items = f.items.map(it => `
+    <details class="faq-item">
+      <summary>${esc(it.q)}</summary>
+      <div class="faq-a"><p>${esc(it.a)}</p></div>
+    </details>`).join('');
+  return `
+  <section class="section faq" id="faq">
+    <div class="wrap faq-inner reveal">
+      <span class="eyebrow center">${esc(f.eyebrow)}</span>
+      <h2 class="display section-h">${esc(f.heading)}</h2>
+      <div class="faq-list">${items}</div>
+    </div>
+  </section>`;
+}
+
+function renderFooter(){
+  const f = SITE.footer;
+  $('#footer').innerHTML = `
+    <div class="signoff">${esc(f.signoff)}</div>
+    <div class="fbrand">${esc(SITE.brandName)}</div>
+    <p>${esc(f.line)}</p>
+    <p style="margin-top:.5rem">${esc(f.opening)}<span class="dot">·</span>${esc(f.whatsapp)}</p>`;
+}
+
+/* ---------- BUILD ---------- */
+function build(){
+  renderNav();
+  $('#app').innerHTML =
+    heroSection() + aboutSection() + experienceSection() + menusSection() +
+    storySection() + retreatSection() + packagesSection() + visitSection() +
+    locationSection() + weddingsSection() + faqSection() + contactSection();
+  renderFooter();
+  wireLightbox();
+  wireMenuTabs();
+  wireReveal();
+}
+
+/* ---------- LIGHTBOX ---------- */
+function wireLightbox(){
+  const lb = $('#lightbox'), img = $('#lightboxImg');
+  const open = src => { img.src = src; lb.classList.add('open'); document.body.style.overflow='hidden'; };
+  const close = () => { lb.classList.remove('open'); document.body.style.overflow=''; img.src=''; };
+  document.querySelectorAll('[data-zoom]').forEach(node => {
+    node.style.cursor='zoom-in';
+    node.addEventListener('click', () => {
+      const im = node.tagName==='IMG' ? node : node.querySelector('img');
+      if(im && im.src) open(im.src);
+    });
+  });
+  $('#lightboxClose').addEventListener('click', close);
+  lb.addEventListener('click', e => { if(e.target === lb) close(); });
+  document.addEventListener('keydown', e => { if(e.key==='Escape') close(); });
+}
+
+/* ---------- REVEAL ---------- */
+function wireReveal(){
+  const items = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){ items.forEach(i=>i.classList.add('in')); return; }
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold:0.12, rootMargin:'0px 0px -8% 0px' });
+  items.forEach(i=>io.observe(i));
+}
+
+build();
+</script>
+</body>
+</html>
